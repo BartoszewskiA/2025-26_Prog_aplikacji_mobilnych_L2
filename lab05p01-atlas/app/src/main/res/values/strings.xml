@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">lab05p01-atlas</string>
+
+    <string name="tytul">Mashrooms atlas</string>
+    <string name="btn_np">Next</string>
+    <string name="btn_ws">Prewious</string>
+
+    <string-array name="nazwy">
+        <item>King Bolete</item>
+        <item>Bay Bolete</item>
+        <item>Fly Agaric</item>
+        <item>Parasol Mushroom</item>
+    </string-array>
+
+    <string-array name="opisy">
+        <item>a species of fungi from the Boletaceae family, commonly known as the porcini mushroom.</item>
+        <item>a species of fungi from the Boletaceae family.</item>
+        <item>a species of fungi belonging to the Amanitaceae family</item>
+        <item>a species of fungi belonging to the Agaricaceae family</item>
+    </string-array>
+
+
+
+</resources>

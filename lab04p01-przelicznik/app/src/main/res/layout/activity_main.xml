@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_50p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <EditText
+        android:id="@+id/et_01"
+        android:text="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_30p"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="26sp"
+        />
+
+    <EditText
+        android:id="@+id/et_02"
+        android:text="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_30p"
+        app:layout_constraintTop_toBottomOf="@id/et_01"
+        android:layout_margin="20dp"
+        android:editable="false"
+        android:gravity="center"
+        android:textSize="26sp"
+        />
+    <TextView
+        android:id="@+id/tv_01"
+        android:text="PLN"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/guideline_30p"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_01"
+        />
+    <TextView
+        android:id="@+id/tv_02"
+        android:text="EURO"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/guideline_30p"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_02"
+        />
+
+    <SeekBar
+        android:id="@+id/sb_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_02"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:min="0"
+        android:max="200"/>
+
+    <RadioGroup
+        android:id="@+id/rg_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_50p"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sb_01"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/rb_zr_pln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="PLN"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rb_zr_euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EURO"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rb_zr_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="26sp" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rg_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_50p"
+        app:layout_constraintTop_toBottomOf="@id/sb_01"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/rb_wy_pln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="PLN"
+            android:textSize="26sp" />
+
+        <RadioButton
+            android:id="@+id/rb_wy_euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EURO"
+            android:textSize="26sp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_wy_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="26sp" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
