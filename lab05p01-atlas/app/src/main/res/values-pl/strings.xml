@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lab05p01-atlas</string>
+    <string name="tytul">Atlas grzybów</string>
+    <string name="btn_np">Naprzód</string>
+    <string name="btn_ws">Wstecz</string>
+
+    <string-array name="nazwy">
+        <item>Borowik szlachetny</item>
+        <item>Podgrzybek zajączek</item>
+        <item>Muchomor czerwony</item>
+        <item>Czubajka kania</item>
+    </string-array>
+
+    <string-array name="opisy">
+        <item>gatunek grzybów z rodziny borowikowatych, potocznie nazywany prawdziwkiem.</item>
+        <item>gatunek grzybów z rodziny borowikowatych</item>
+        <item>gatunek grzybów należący do rodziny muchomorowatych </item>
+        <item>gatunek grzybów należący do rodziny pieczarkowatych</item>
+    </string-array>
+
+</resources>
